@@ -21,6 +21,7 @@
 
     methods: {
       formSubmit (e) {
+        this.$emit('formSubmit', this.textToTranslate)
         e.preventDefault();
       }
     }
