@@ -3,13 +3,13 @@
     <h1>Word Translator</h1>
     <h5>Powered By Vue.js</h5>
     <TranslateForm v-on:formSubmit="translateText"></TranslateForm>
+    <TranslateOutput v-text="translatedText"></TranslateOutput>
   </div>
 </template>
 
 <script>
 import TranslateForm from './components/TranslateForm'
 import TranslateOutput from './components/TranslateOutput'
-import axios from 'axios'
 
 export default {
   name: 'App',
